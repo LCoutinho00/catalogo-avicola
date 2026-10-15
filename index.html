@@ -76,6 +76,46 @@ h1 span{color:var(--acc)}
 .empty{padding:48px 20px;text-align:center;border:1px dashed rgba(243,238,223,.25);border-radius:22px;display:flex;flex-direction:column;gap:12px;align-items:center}
 .ghost{min-height:44px;padding:0 20px;border-radius:999px;border:1px solid var(--acc);background:transparent;color:var(--acc);font-weight:700}
 footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--mut);border-top:1px solid var(--line);padding-top:18px}
+.cartbtn{position:relative;min-width:44px;height:44px;padding:0 12px;border-radius:999px;border:1px solid rgba(243,238,223,.22);background:var(--surf);color:var(--ink);display:flex;align-items:center;gap:8px;font-weight:700;font-size:13px}
+.cartbtn i{font-style:normal;min-width:20px;height:20px;padding:0 6px;border-radius:999px;background:var(--acc);color:var(--onacc);font-size:12px;font-weight:800;display:inline-flex;align-items:center;justify-content:center}
+.cardw{position:relative;display:flex}
+.cardw .card{flex:1}
+.qwrap{position:absolute;left:9px;right:9px;top:9px;aspect-ratio:1/1;pointer-events:none;z-index:2}
+.qadd{position:absolute;right:8px;bottom:8px;pointer-events:auto;width:44px;height:44px;border-radius:50%;border:0;background:var(--acc);color:var(--onacc);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 20px -8px rgba(0,0,0,.7);transition:transform .2s}
+.qadd:active{transform:scale(.9)}
+.qadd.in{background:var(--ink)}
+.cartbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:450;max-width:560px;margin:0 auto;min-height:62px;border-radius:20px;border:0;background:var(--acc);color:var(--onacc);display:flex;align-items:center;gap:12px;padding:8px 14px 8px 10px;box-shadow:0 20px 40px -14px rgba(0,0,0,.75);animation:sheet .4s cubic-bezier(.2,.8,.2,1)}
+.cartbar[hidden]{display:none}
+.cb-ic{position:relative;width:46px;height:46px;border-radius:14px;background:rgba(27,26,12,.12);display:flex;align-items:center;justify-content:center}
+.cb-ic b{position:absolute;top:-6px;right:-6px;min-width:22px;height:22px;padding:0 6px;border-radius:999px;background:var(--bg);color:var(--ink);font-size:12px;display:flex;align-items:center;justify-content:center}
+.cb-t{display:flex;flex-direction:column;align-items:flex-start;line-height:1.15;flex:1;font-size:12px;font-weight:600}
+.cb-t strong{font-family:'Bricolage Grotesque',sans-serif;font-size:19px;font-weight:800}
+.cb-go{display:flex;align-items:center;gap:4px;font-weight:800;font-size:15px}
+.bump{animation:bump .45s cubic-bezier(.2,.8,.2,1)}
+@keyframes bump{0%{transform:scale(1)}40%{transform:scale(1.06) translateY(-3px)}100%{transform:scale(1)}}
+.toast{position:fixed;left:50%;top:calc(14px + env(safe-area-inset-top));z-index:700;transform:translate(-50%,-140%);background:var(--ink);color:var(--bg);font-weight:700;font-size:14px;padding:12px 18px;border-radius:999px;box-shadow:0 14px 30px -10px rgba(0,0,0,.6);transition:transform .35s cubic-bezier(.2,.8,.2,1);max-width:calc(100% - 32px);text-align:center}
+.toast.on{transform:translate(-50%,0)}
+.stepper{display:flex;align-items:center;gap:4px;background:#0E2019;border-radius:999px;padding:4px}
+.stepper button{width:40px;height:40px;border-radius:50%;border:0;background:var(--surf);color:var(--ink);font-size:20px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.stepper button:disabled{opacity:.35}
+.stepper output{min-width:30px;text-align:center;font-weight:800;font-size:16px}
+.addrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.addrow .cta{flex:1;justify-content:center;min-height:52px}
+.ci{display:grid;grid-template-columns:60px minmax(0,1fr);gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.ci .photo{width:60px;height:72px;border-radius:12px;box-shadow:none}
+.ci-h{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.ci-n{font-weight:700;font-size:15px;line-height:1.25}
+.ci-m{font-size:12px;color:var(--mut)}
+.ci-f{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:8px}
+.ci .stepper button{width:34px;height:34px;font-size:18px}
+.rm{width:36px;height:36px;border-radius:50%;border:0;background:transparent;color:var(--mut);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.field{display:flex;flex-direction:column;gap:6px}
+.field input,.field textarea{background:var(--surf);border:1px solid var(--line);border-radius:14px;color:var(--ink);font:inherit;font-size:16px;padding:12px 14px;min-height:48px;resize:vertical}
+.tot{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--line);padding-top:14px}
+.preview{white-space:pre-wrap;background:#0B1F17;border:1px dashed rgba(243,238,223,.2);border-radius:14px;padding:12px 14px;font-size:13px;line-height:1.5;color:#D6D2C4;font-family:ui-monospace,Menlo,Consolas,monospace;max-height:220px;overflow:auto}
+details summary{cursor:pointer;font-weight:700;font-size:14px;color:var(--mut);min-height:44px;display:flex;align-items:center}
+.wbtn{background:#25D366;color:#0B2E17}
+body.hascart .wrap{padding-bottom:calc(110px + env(safe-area-inset-bottom))}
 .fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:400;width:58px;height:58px;border-radius:50%;background:#25D366;color:#0B2E17;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px -10px rgba(0,0,0,.6)}
 /* modal */
 .back{position:fixed;inset:0;z-index:500;background:rgba(5,13,10,.74);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);display:flex;align-items:flex-end;justify-content:center;animation:fade .3s ease}
@@ -121,7 +161,8 @@ footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-s
         <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="none" stroke="#F4C430" stroke-width="2"/><path d="M9 20c3-7 9-9 16-8-3 1-5 3-6 6 3 0 5-1 6-2-2 5-7 7-12 6l-4 3z" fill="#F4C430"/></svg>
         Catálogo Especializado
       </div>
-      <span class="muted" style="font-size:12px;font-weight:600" id="total"></span>
+      <div style="display:flex;align-items:center;gap:10px"><span class="muted" style="font-size:12px;font-weight:600" id="total"></span>
+      <button type="button" class="cartbtn" id="cartbtn" aria-label="Abrir carrinho"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg><i id="cartn">0</i></button></div>
     </div>
     <h1 class="disp">Nutrição &amp; Suplementação <span>Avícola</span></h1>
     <p class="lead">Arraste o carrossel, toque em um produto e gire a embalagem em 3D. Pedidos direto com o Flávio pelo WhatsApp.</p>
@@ -166,7 +207,14 @@ footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-s
   </footer>
 </div>
 
-<a class="fab" href="https://wa.me/5561992531753?text=Ol%C3%A1%2C%20Fl%C3%A1vio!%20Vi%20o%20cat%C3%A1logo%20e%20tenho%20uma%20d%C3%BAvida." target="_blank" rel="noopener" aria-label="Falar com o Flávio no WhatsApp">
+<button type="button" class="cartbar" id="cartbar" hidden>
+  <span class="cb-ic"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg><b id="cbn">0</b></span>
+  <span class="cb-t"><span id="cbq">0 itens</span><strong id="cbv">R$ 0,00</strong></span>
+  <span class="cb-go">Ver carrinho<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<a class="fab" id="fab" href="https://wa.me/5561992531753?text=Ol%C3%A1%2C%20Fl%C3%A1vio!%20Vi%20o%20cat%C3%A1logo%20e%20tenho%20uma%20d%C3%BAvida." target="_blank" rel="noopener" aria-label="Falar com o Flávio no WhatsApp">
   <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 9.5z" fill="currentColor"/></svg>
 </a>
 
@@ -192,14 +240,15 @@ var P=[
 {id:12,brand:'Versele-Laga',name:'Ferti Vit Fracionado',cat:'repro',img:'img/p12.jpg',vars:[{l:'20 g',p:40,ok:true}],desc:'Suplemento em pó enriquecido com alta dose de Vitamina E, aminoácidos e oligoelementos. Projetado especificamente para promover o impulso sexual e a fertilidade nas aves.',uso:'Diluir 1g (1 colher dosadora) em 250 mL de água potável e 100g de farinhada. Administrar diariamente durante 3 a 4 semanas até à postura do primeiro ovo.',ben:'Estimula o galar nos machos e a postura nas fêmeas, aumenta a fertilidade dos ovos, reduz mortes no embrião e promove um canto forte nos galadores.',comp:'Vitamina E ultra-concentrada, Vitaminas A, D3, C, K3, B1, B2, B6, B12, Niacina, Lisina, Metionina, Zinco e Selênio.'},
 {id:13,brand:'Versele-Laga',name:'Calci Lux Fracionado',cat:'figado',img:'img/p13.jpg',vars:[{l:'20 g',p:20,ok:true}],desc:'Fonte de cálcio de altíssima qualidade e solubilidade em água. Fundamental para a formação ideal da casca dos ovos e para a perfeita estrutura óssea de filhotes em crescimento.',uso:'Em reprodução: 1 colher medida (4g) por 100g de farinhada ou 250mL de água diários. Prevenção de retenção de ovo: administrar diariamente no período de postura.',ben:'Evita ovos moles ou com casca de papel, previne a retenção do ovo na fêmea, garante ossos fortes nos filhotes e evita deficiência de cálcio no organismo.',comp:'Lactato de Cálcio puro e Gluconato de Cálcio, altamente assimiláveis pelo trato gastrointestinal das aves.'},
 {id:14,brand:'Nekton',name:'Nekton S',cat:'vita',img:'img/p14.jpg',vars:[{l:'35 g',p:100,ok:true}],desc:'Suplemento vitamínico mundialmente aclamado, contendo 13 vitaminas, 18 aminoácidos livres e minerais. Auxilia os processos metabólicos e melhora o aproveitamento total dos nutrientes diários.',uso:'Diluir 1g (1 colher dosadora inclusa) em 250 mL de água potável fria ou em 250g de papa de ovo. Usar regularmente ao longo do ano para manutenção da saúde.',ben:'Aumenta a imunidade e possui ação anti-stress. Melhora significativamente a taxa de fertilidade, a vitalidade dos reprodutores e o bem-estar geral das aves.',comp:'Dextrose, Carbonato de Cálcio, 18 aminoácidos (L-Alanina, L-Arginina, L-Lisina, etc.), Vitaminas A, D3, E, B-Complexo, C, Zinco e Cobre.'},
-{id:15,brand:'Versele-Laga',name:'Muscle Power',cat:'energia',img:'img/p15.jpg',vars:[{l:'1 cápsula',p:5,ok:true}],note:'Quantidade mínima de 8 cápsulas por pote.',desc:'Cápsula de alta concentração à base de aminoácidos de cadeia ramificada (BCAA: Valina, Leucina e Isoleucina). Desenvolvida para prevenir a degradação e otimizar a reconstrução muscular.',uso:'Administrar 1 cápsula diretamente no bico (umedecer com água antes de aplicar). Na véspera de competições ou logo após o retorno de voos e torneios para rápida recuperação.',ben:'Estimula o ganho muscular rápido, reduz significativamente a fadiga e a deterioração dos tecidos musculares após esforços intensos e acelera a regeneração.',comp:'L-Leucina (300mg), L-Valina (150mg), L-Isoleucina (150mg) e Vitamina B6 (2,8mg) por cápsula.'},
+{id:15,brand:'Versele-Laga',name:'Muscle Power',cat:'energia',img:'img/p15.jpg',vars:[{l:'1 cápsula',p:5,ok:true}],note:'Quantidade mínima de 8 cápsulas por pote.',min:8,desc:'Cápsula de alta concentração à base de aminoácidos de cadeia ramificada (BCAA: Valina, Leucina e Isoleucina). Desenvolvida para prevenir a degradação e otimizar a reconstrução muscular.',uso:'Administrar 1 cápsula diretamente no bico (umedecer com água antes de aplicar). Na véspera de competições ou logo após o retorno de voos e torneios para rápida recuperação.',ben:'Estimula o ganho muscular rápido, reduz significativamente a fadiga e a deterioração dos tecidos musculares após esforços intensos e acelera a regeneração.',comp:'L-Leucina (300mg), L-Valina (150mg), L-Isoleucina (150mg) e Vitamina B6 (2,8mg) por cápsula.'},
 {id:16,brand:'Versele-Laga',name:'Oro Bath',cat:'pluma',img:'img/p16.jpg',vars:[{l:'20 g',p:30,ok:false}],desc:'Sais de banho especiais para cuidados com a plumagem. Promove penas brilhantes, flexíveis e livres de parasitas externos, além de manter a pele saudável e hidratada.',uso:'Diluir 1 medida (1g) em 250 mL de água morna para a banheira da ave. Oferecer de 1 a 2 vezes por semana, especialmente durante os períodos de exposição e muda de penas.',ben:'Relaxa a musculatura da ave, limpa profundamente sem remover a oleosidade natural da pena e ajuda na remoção de caspas e resíduos de queratina das penas novas.',comp:'Sais minerais purificados, essência de pinho, agentes hidratantes da pele e condicionadores de plumagem de alta eficácia.'},
 {id:17,brand:'Versele-Laga',name:'Muta Vit',cat:'pluma',img:'img/p17.jpg',vars:[{l:'20 g',p:30,ok:false}],desc:'Mistura especial de vitaminas, aminoácidos e oligoelementos com alto teor de aminoácidos sulfurosos e biotina, desenvolvida para o período de muda das penas.',uso:'Diluir 1g (1 medida) por 250 mL de água potável ou 100g de farinhada. Oferecer 3 vezes por semana durante a época de muda e preparação de exposições.',ben:'Estimula a formação e o crescimento de uma plumagem forte, sedosa e perfeita, prevenindo mutações de penas defeituosas e reduzindo o estresse do processo.',comp:'Metionina, Cisteína, Biotina, Complexo B completo, Vitamina A, D3, E, C e minerais traço essenciais para o metabolismo do pelo e pena.'},
 {id:18,brand:'Versele-Laga',name:'Aminobolic Force',cat:'energia',img:'img/p18.jpg',vars:[{l:'10 ml',p:35,ok:false}],note:'Substituto do OMNIFORM, que foi descontinuado pela Oropharma.',desc:'Concentrado líquido de aminoácidos e adaptógenos. Substitui o consagrado Omniform que foi descontinuado pela Oropharma, fornecendo suporte metabólico imediato e recuperação muscular.',uso:'Adicionar 15 gotas em 50 mL de água de beber no dia anterior a competições ou durante 3 a 5 dias consecutivos em fases de esgotamento físico e estresse.',ben:'Rápida assimilação celular, melhora o rendimento do canto, previne a perda de massa magra em aves doentes e combate prostração e estresse de transporte.',comp:'Aminoácidos essenciais e não-essenciais purificados, L-Carnitina, complexo de recuperação B-Vitamínico e eletrólitos de bioabsorção rápida.'},
 {id:19,brand:'Versele-Laga',name:'Tropical Fruit Patee',cat:'alim',img:'img/p19.jpg',vars:[{l:'1 kg',p:300,ok:false}],desc:'Papa enriquecida com frutas tropicais selecionadas e mel natural. Alimento completo e altamente palatável para psitacídeos de pequeno e médio porte, frugívoros e aves ornamentais.',uso:'Servir à vontade como complemento alimentar ou misturado à ração habitual. Renovar diariamente para garantir o frescor e aroma dos pedaços de frutas.',ben:'Estimula o apetite de aves seletivas, fornece antioxidantes naturais provenientes de frutas tropicais e garante vitalidade com excelente digestibilidade.',comp:'Produtos de padaria, frutas tropicais desidratadas (mamão, abacaxi, banana, manga), mel natural (100%), extratos proteicos, óleos e minerais balanceados.'}
 ];
 var CATS=[['all','Todos'],['alim','Alimentação'],['repro','Reprodução'],['vita','Vitaminas'],['energia','Energia & Músculo'],['figado','Fígado & Cálcio'],['pluma','Plumagem']];
-var S={cat:'all',q:'',active:0,open:null,v:0,tab:'desc',flip:false,list:[]};
+var S={cat:'all',q:'',active:0,open:null,v:0,tab:'desc',flip:false,list:[],mode:'prod',qty:1,cart:[],name:'',obs:''};
+try{var _c=JSON.parse(localStorage.getItem('cat-avicola-cart')||'{}');if(Array.isArray(_c.items))S.cart=_c.items.filter(function(it){return P.some(function(p){return p.id===it.id&&p.vars[it.vi]})});S.name=_c.name||'';S.obs=_c.obs||''}catch(e){}
 var $=function(id){return document.getElementById(id)};
 function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
 function fmt(n){return 'R$ '+n.toFixed(2).replace('.',',')}
@@ -246,9 +295,11 @@ function renderGrid(){
   $('gt').textContent=S.cat==='all'?'Catálogo completo':lab;
   $('gc').textContent=S.list.length+(S.list.length===1?' produto':' produtos');
   $('grid').innerHTML=S.list.map(function(p,i){
-    return '<button type="button" class="card'+(ok(p)?'':' out')+'" data-id="'+p.id+'" style="animation-delay:'+(Math.min(i,12)*.05)+'s" aria-label="'+esc(p.brand+' '+p.name)+'">'+
+    var inCart=cartQtyFor(p.id)>0;
+    var qa=ok(p)?'<div class="qwrap"><button type="button" class="qadd'+(inCart?' in':'')+'" data-add="'+p.id+'" aria-label="Adicionar '+esc(p.brand+' '+p.name)+' ao carrinho">'+(inCart?'<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>':'<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>')+'</button></div>':'';
+    return '<div class="cardw"><button type="button" class="card'+(ok(p)?'':' out')+'" data-id="'+p.id+'" style="animation-delay:'+(Math.min(i,12)*.05)+'s" aria-label="'+esc(p.brand+' '+p.name)+'">'+
       '<div class="photo"><img src="'+p.img+'" alt="" loading="lazy">'+(ok(p)?'':'<span class="badge">Indisponível</span>')+(p.vars.length>1?'<span class="opt">2 opções</span>':'')+'</div>'+
-      '<div class="cbody"><span class="cb">'+esc(p.brand)+'</span><span class="cn">'+esc(p.name)+'</span><span class="cq">'+esc(qtyTxt(p))+'</span><span class="cp disp">'+priceTxt(p)+'</span></div></button>';
+      '<div class="cbody"><span class="cb">'+esc(p.brand)+'</span><span class="cn">'+esc(p.name)+'</span><span class="cq">'+esc(qtyTxt(p))+'</span><span class="cp disp">'+priceTxt(p)+'</span></div></button>'+qa+'</div>';
   }).join('');
 }
 function refresh(){
@@ -259,13 +310,13 @@ function refresh(){
 }
 function go(k){if(!S.list.length)return;S.active=(S.active+k+S.list.length)%S.list.length;layout()}
 
-function openP(id){S.open=id;S.v=0;S.tab='desc';S.flip=false;renderSheet();$('back').hidden=false;document.body.classList.add('lock');setTimeout(function(){var x=$('sheet').querySelector('.x');x&&x.focus()},50)}
-function closeP(){S.open=null;$('back').hidden=true;document.body.classList.remove('lock')}
+function openP(id){S.mode='prod';S.qty=(prod(id).min||1);S.open=id;S.v=0;S.tab='desc';S.flip=false;renderSheet();$('back').hidden=false;document.body.classList.add('lock');setTimeout(function(){var x=$('sheet').querySelector('.x');x&&x.focus()},50)}
+function closeP(){S.open=null;S.mode='prod';$('back').hidden=true;document.body.classList.remove('lock')}
 function renderSheet(){
   var p=P.filter(function(x){return x.id===S.open})[0];if(!p)return;
   var vi=Math.min(S.v,p.vars.length-1),sel=p.vars[vi];
-  var msg=(sel.ok?'Olá, Flávio! Quero pedir: ':'Olá, Flávio! Quando volta a ter: ')+p.brand+' '+p.name+' ('+sel.l+') — '+fmt(sel.p)+(p.id===15?' · mínimo 8 cápsulas':'');
-  var wa='https://wa.me/'+PHONE+'?text='+encodeURIComponent(msg);
+  var mn=p.min||1;if(S.qty<mn)S.qty=mn;
+  var inC=S.cart.filter(function(it){return it.id===p.id&&it.vi===vi})[0];
   var tabs=[['desc','Descrição'],['uso','Como usar'],['ben','Benefícios'],['comp','Composição']];
   var sh=$('sheet');sh.setAttribute('aria-label',p.brand+' '+p.name);
   sh.innerHTML=
@@ -275,8 +326,74 @@ function renderSheet(){
    '<div style="display:flex;flex-direction:column;gap:6px"><span class="kick">'+esc(p.brand)+'</span><h2 class="mt disp">'+esc(p.name)+'</h2>'+(p.note?'<p class="note">'+esc(p.note)+'</p>':'')+'</div>'+
    '<div style="display:flex;flex-direction:column;gap:8px"><span class="lbl">Apresentação</span><div class="vars">'+p.vars.map(function(v,i){return '<button type="button" class="var'+(v.ok?'':' no')+'" data-v="'+i+'" aria-pressed="'+(i===vi)+'"><b>'+esc(v.l)+'</b><span>'+fmt(v.p)+(v.ok?'':' · indisponível')+'</span></button>'}).join('')+'</div></div>'+
    '<div style="display:flex;flex-direction:column;gap:12px"><div class="tabs" role="tablist" aria-label="Informações do produto">'+tabs.map(function(t){return '<button type="button" role="tab" class="tab" data-tab="'+t[0]+'" aria-selected="'+(S.tab===t[0])+'">'+t[1]+'</button>'}).join('')+'</div><p class="panel" role="tabpanel">'+esc(p[S.tab])+'</p></div>'+
-   '<div class="buy"><div style="display:flex;flex-direction:column"><span class="muted" style="font-size:12px">'+esc(sel.l)+'</span><span class="disp" style="font-weight:800;font-size:28px">'+fmt(sel.p)+'</span></div><a class="cta'+(sel.ok?'':' alt')+'" href="'+wa+'" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>'+(sel.ok?'Pedir ao Flávio':'Avise-me quando chegar')+'</a></div>';
+   '<div class="buy" style="flex-direction:column;align-items:stretch"><div style="display:flex;justify-content:space-between;align-items:flex-end;gap:12px"><div style="display:flex;flex-direction:column"><span class="muted" style="font-size:12px">'+esc(sel.l)+(S.qty>1?' · '+S.qty+' un.':'')+'</span><span class="disp" style="font-weight:800;font-size:28px">'+fmt(sel.p*S.qty)+'</span></div>'+
+   '<div class="stepper" aria-label="Quantidade"><button type="button" data-act="qminus" aria-label="Diminuir quantidade"'+(S.qty<=mn?' disabled':'')+'>−</button><output aria-live="polite">'+S.qty+'</output><button type="button" data-act="qplus" aria-label="Aumentar quantidade">+</button></div></div>'+
+   (inC?'<p class="muted" style="margin:0;font-size:13px">Já no carrinho: '+inC.q+' un. desta opção.</p>':'')+
+   '<div class="addrow"><button type="button" class="cta'+(sel.ok?'':' alt')+'" data-act="add"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg>'+(sel.ok?'Adicionar ao carrinho':'Incluir no “Avise-me”')+'</button></div>'+
+   (S.cart.length?'<button type="button" class="pill" data-act="cart" style="justify-content:center">Ver carrinho ('+cartUnits()+')</button>':'')+'</div>';
 }
+
+/* ---------- carrinho ---------- */
+function prod(id){return P.filter(function(x){return x.id===id})[0]}
+function saveCart(){try{localStorage.setItem('cat-avicola-cart',JSON.stringify({items:S.cart,name:S.name,obs:S.obs}))}catch(e){}}
+function cartQtyFor(id){return S.cart.reduce(function(n,it){return n+(it.id===id?it.q:0)},0)}
+function cartUnits(){return S.cart.reduce(function(n,it){return n+it.q},0)}
+function lines(){return S.cart.map(function(it){var p=prod(it.id),v=p.vars[it.vi];return {it:it,p:p,v:v,sub:v.p*it.q}})}
+function cartTotal(){return lines().filter(function(l){return l.v.ok}).reduce(function(n,l){return n+l.sub},0)}
+function addToCart(id,vi,q){var p=prod(id),f=S.cart.filter(function(it){return it.id===id&&it.vi===vi})[0];if(f)f.q+=q;else S.cart.push({id:id,vi:vi,q:Math.max(q,p.min||1)});saveCart();syncCart(true)}
+function plural(n,a,b){return n+' '+(n===1?a:b)}
+function syncCart(bump){
+  var u=cartUnits(),bar=$('cartbar');
+  $('cartn').textContent=u;$('cbn').textContent=u;
+  var pedidos=lines().filter(function(l){return l.v.ok});
+  $('cbq').textContent=plural(u,'item','itens')+(pedidos.length<S.cart.length?' · inclui avise-me':'');
+  $('cbv').textContent=fmt(cartTotal());
+  bar.hidden=!S.cart.length;document.body.classList.toggle('hascart',!!S.cart.length);$('fab').hidden=!!S.cart.length;
+  if(bump){bar.classList.remove('bump');void bar.offsetWidth;bar.classList.add('bump')}
+  Array.prototype.forEach.call(document.querySelectorAll('[data-add]'),function(b){var on=cartQtyFor(+b.dataset.add)>0;b.classList.toggle('in',on);b.innerHTML=on?'<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>':'<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>'});
+}
+var tt;function toast(t){var e=$('toast');e.textContent=t;e.classList.add('on');clearTimeout(tt);tt=setTimeout(function(){e.classList.remove('on')},2000)}
+function buildMsg(){
+  var L=lines(),ped=L.filter(function(l){return l.v.ok}),avi=L.filter(function(l){return !l.v.ok}),m=[];
+  m.push('Olá, Flávio! Tudo bem?');
+  if(ped.length){
+    m.push('Gostaria de fazer um pedido pelo catálogo:','','🛒 *PEDIDO*');
+    ped.forEach(function(l,i){m.push((i+1)+'. *'+l.it.q+'x* '+l.p.brand+' '+l.p.name,'    '+l.v.l+' · '+fmt(l.v.p)+' un. = *'+fmt(l.sub)+'*')});
+    var u=ped.reduce(function(n,l){return n+l.it.q},0);
+    m.push('','💰 *TOTAL: '+fmt(cartTotal())+'*','('+plural(u,'unidade','unidades')+' · '+plural(ped.length,'produto','produtos')+')');
+  }
+  if(avi.length){
+    m.push('',ped.length?'🔔 *AVISE-ME QUANDO CHEGAR*':'Tenho interesse nestes itens que estão indisponíveis. Pode me avisar quando chegarem?','');
+    if(ped.length)m.length--;
+    avi.forEach(function(l){m.push('• '+l.it.q+'x '+l.p.brand+' '+l.p.name+' ('+l.v.l+')')});
+  }
+  var nm=S.name.trim(),ob=S.obs.trim();
+  if(nm||ob){m.push('');if(nm)m.push('👤 *Nome:* '+nm);if(ob)m.push('📝 *Observação:* '+ob)}
+  m.push('',ped.length?'Aguardo a confirmação, a forma de pagamento e a entrega/retirada. Obrigado!':'Obrigado!');
+  return m.join('\n');
+}
+function waHref(){return 'https://wa.me/'+PHONE+'?text='+encodeURIComponent(buildMsg())}
+function openCart(){S.mode='cart';renderCart();$('back').hidden=false;document.body.classList.add('lock');setTimeout(function(){var x=$('sheet').querySelector('.x');x&&x.focus()},50)}
+function refreshMsg(){var a=$('sendwa');if(a)a.href=waHref();var pv=$('pv');if(pv)pv.textContent=buildMsg()}
+function renderCart(){
+  var sh=$('sheet');sh.setAttribute('aria-label','Carrinho');
+  var L=lines(),ped=L.filter(function(l){return l.v.ok}),avi=L.filter(function(l){return !l.v.ok});
+  var row=function(l){var i=S.cart.indexOf(l.it),mn=l.p.min||1;return '<div class="ci"><div class="photo'+(l.v.ok?'':' out')+'"><img src="'+l.p.img+'" alt=""></div><div><div class="ci-h"><div><div class="ci-m" style="text-transform:uppercase;letter-spacing:.08em;font-weight:700">'+esc(l.p.brand)+'</div><div class="ci-n">'+esc(l.p.name)+'</div><div class="ci-m">'+esc(l.v.l)+' · '+fmt(l.v.p)+' un.'+(l.p.min?' · mín. '+l.p.min:'')+'</div></div><button type="button" class="rm" data-rm="'+i+'" aria-label="Remover '+esc(l.p.name)+'"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M10 7V5h4v2M7 7l1 12h8l1-12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>'+
+    '<div class="ci-f"><div class="stepper"><button type="button" data-dec="'+i+'" aria-label="Diminuir"'+(l.it.q<=mn?' disabled':'')+'>−</button><output>'+l.it.q+'</output><button type="button" data-inc="'+i+'" aria-label="Aumentar">+</button></div><span class="disp" style="font-weight:800;font-size:18px'+(l.v.ok?'':';color:var(--out-fg);font-size:13px')+'">'+(l.v.ok?fmt(l.sub):'avise-me')+'</span></div></div></div>'};
+  var x='<div style="display:flex;align-items:center;justify-content:space-between"><h2 class="mt disp" style="font-size:26px">Seu carrinho</h2><button type="button" class="x" data-act="close" aria-label="Fechar"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button></div>';
+  if(!S.cart.length){sh.innerHTML=x+'<div class="empty"><span class="disp" style="font-size:20px;font-weight:700">Carrinho vazio</span><span class="muted">Toque no + dos produtos para adicionar.</span><button type="button" class="ghost" data-act="close">Ver produtos</button></div>';return}
+  x+=(ped.length?'<div>'+ped.map(row).join('')+'</div>':'');
+  x+=(avi.length?'<div><span class="lbl" style="color:var(--out-fg)">Avise-me quando chegar</span>'+avi.map(row).join('')+'</div>':'');
+  x+=(ped.length?'<div class="tot"><span class="muted">Total ('+plural(ped.reduce(function(n,l){return n+l.it.q},0),'unidade','unidades')+')</span><span class="disp" style="font-weight:800;font-size:28px">'+fmt(cartTotal())+'</span></div>':'');
+  x+='<div class="field"><label class="lbl" for="cnome">Seu nome (opcional)</label><input id="cnome" autocomplete="name" value="'+esc(S.name)+'" placeholder="Como o Flávio deve te chamar"></div>'+
+     '<div class="field"><label class="lbl" for="cobs">Observação (opcional)</label><textarea id="cobs" rows="2" placeholder="Ex.: retirada, entrega, horário…">'+esc(S.obs)+'</textarea></div>'+
+     '<details><summary>Ver a mensagem que será enviada</summary><div class="preview" id="pv"></div></details>'+
+     '<a class="cta wbtn" id="sendwa" href="#" target="_blank" rel="noopener" style="justify-content:center;min-height:56px"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Enviar pedido ao Flávio</a>'+
+     '<div style="display:flex;gap:10px;flex-wrap:wrap"><button type="button" class="pill" data-act="close" style="flex:1;justify-content:center">Continuar comprando</button><button type="button" class="pill" data-act="clear" style="flex:1;justify-content:center;color:var(--out-fg)">Esvaziar</button></div>';
+  sh.innerHTML=x;refreshMsg();
+}
+$('cartbtn').addEventListener('click',openCart);
+$('cartbar').addEventListener('click',openCart);
 
 $('chips').addEventListener('click',function(e){var b=e.target.closest('.chip');if(!b)return;S.cat=b.dataset.cat;S.active=0;refresh()});
 $('busca').addEventListener('input',function(e){S.q=e.target.value;S.active=0;refresh()});
@@ -289,20 +406,29 @@ var sx=null,moved=false;
 $('stage').addEventListener('touchstart',function(e){sx=e.touches[0].clientX;moved=false},{passive:true});
 $('stage').addEventListener('touchmove',function(e){if(sx!=null&&Math.abs(e.touches[0].clientX-sx)>12)moved=true},{passive:true});
 $('stage').addEventListener('touchend',function(e){if(sx==null)return;var dx=e.changedTouches[0].clientX-sx;sx=null;if(Math.abs(dx)>40)go(dx<0?1:-1);setTimeout(function(){moved=false},60)});
-$('grid').addEventListener('click',function(e){var b=e.target.closest('.card');b&&openP(+b.dataset.id)});
+$('grid').addEventListener('click',function(e){var a=e.target.closest('[data-add]');if(a){var p=prod(+a.dataset.add);if(p.vars.length>1){openP(p.id);return}addToCart(p.id,0,p.min||1);toast((p.min?p.min+'x ':'')+p.name+' adicionado');return}var b=e.target.closest('.card');b&&openP(+b.dataset.id)});
 $('back').addEventListener('click',function(e){if(e.target===$('back'))closeP()});
 $('sheet').addEventListener('click',function(e){
   var t=e.target.closest('button');if(!t)return;
   if(t.dataset.act==='close')closeP();
+  else if(t.dataset.act==='cart')openCart();
+  else if(t.dataset.act==='qplus'){S.qty++;renderSheet()}
+  else if(t.dataset.act==='qminus'){S.qty=Math.max((prod(S.open).min||1),S.qty-1);renderSheet()}
+  else if(t.dataset.act==='add'){var p=prod(S.open),vi=Math.min(S.v,p.vars.length-1);addToCart(p.id,vi,S.qty);toast(p.vars[vi].ok?S.qty+'x '+p.name+' no carrinho':p.name+' incluído no avise-me');S.qty=p.min||1;renderSheet()}
+  else if(t.dataset.act==='clear'){S.cart=[];saveCart();syncCart();renderCart()}
+  else if(t.dataset.rm!=null){S.cart.splice(+t.dataset.rm,1);saveCart();syncCart();renderCart()}
+  else if(t.dataset.inc!=null){S.cart[+t.dataset.inc].q++;saveCart();syncCart();renderCart()}
+  else if(t.dataset.dec!=null){var it=S.cart[+t.dataset.dec],m=prod(it.id).min||1;if(it.q>m){it.q--;saveCart();syncCart();renderCart()}}
   else if(t.dataset.act==='flip'){S.flip=!S.flip;$('flip').classList.toggle('on',S.flip);$('fl').textContent=S.flip?'Ver embalagem':'Girar 3D · ver composição'}
-  else if(t.dataset.v!=null){S.v=+t.dataset.v;renderSheet()}
+  else if(t.dataset.v!=null){S.v=+t.dataset.v;S.qty=prod(S.open).min||1;renderSheet()}
   else if(t.dataset.tab){S.tab=t.dataset.tab;renderSheet()}
 });
 document.addEventListener('keydown',function(e){
-  if(S.open&&e.key==='Escape')closeP();
-  else if(!S.open&&document.activeElement&&document.activeElement.tagName!=='INPUT'){if(e.key==='ArrowLeft')go(-1);if(e.key==='ArrowRight')go(1)}
+  if(!$('back').hidden&&e.key==='Escape')closeP();
+  else if($('back').hidden&&document.activeElement&&document.activeElement.tagName!=='INPUT'){if(e.key==='ArrowLeft')go(-1);if(e.key==='ArrowRight')go(1)}
 });
-refresh();
+$('sheet').addEventListener('input',function(e){if(e.target.id==='cnome')S.name=e.target.value;else if(e.target.id==='cobs')S.obs=e.target.value;else return;saveCart();refreshMsg()});
+refresh();syncCart();
 })();
 </script>
 </body>
