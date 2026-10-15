@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Catálogo Avícola — Nutrição &amp; Suplementação</title>
+<meta name="description" content="Catálogo de nutrição e suplementação avícola. Faça seu pedido com o Flávio pelo WhatsApp.">
+<meta name="theme-color" content="#10241D">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Catálogo Avícola — Nutrição & Suplementação">
+<meta property="og:description" content="Versele-Laga, Tabernil, Latac, Avizoon, Virbac, Nekton. Peça com o Flávio pelo WhatsApp.">
+<meta property="og:image" content="/img/og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+:root{--bg:#10241D;--surf:#183329;--sheet:#132B22;--ink:#F3EEDF;--mut:#B5C0B0;--acc:#F4C430;--onacc:#1B1A0C;--line:rgba(243,238,223,.14);--out-bg:#3A1D16;--out-fg:#FFB59F;--ok-bg:#1F4A38;--ok-fg:#9BE3BF}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);background-image:radial-gradient(rgba(243,238,223,.07) 1px,transparent 1.2px);background-size:22px 22px;color:var(--ink);font-family:'Figtree','Segoe UI',system-ui,sans-serif;overflow-x:hidden}
+body.lock{overflow:hidden}
+a{color:var(--acc)}
+button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.disp{font-family:'Bricolage Grotesque','Trebuchet MS',sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:22px 16px calc(48px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:26px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+.muted{color:var(--mut)}
+h1{margin:0;font-weight:800;font-size:clamp(34px,9vw,64px);line-height:.98;letter-spacing:-.02em;text-wrap:balance}
+h1 span{color:var(--acc)}
+.lead{margin:0;color:var(--mut);font-size:15px;line-height:1.5;max-width:520px}
+.lbl{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+.search{display:flex;align-items:center;gap:10px;background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:0 14px;min-height:50px}
+.search input{flex:1;min-width:0;background:transparent;border:0;color:var(--ink);font-size:16px;height:48px;outline:none}
+.search input::placeholder{color:#8FA197}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 16px 6px;margin:0 -16px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid rgba(243,238,223,.16);background:var(--surf);color:var(--ink);font-weight:700;font-size:14px;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.chip small{font-size:12px;opacity:.75}
+.chip[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:var(--onacc)}
+.stage{position:relative;height:470px;perspective:1100px;perspective-origin:50% 40%;touch-action:pan-y;user-select:none}
+.ring{position:absolute;left:50%;bottom:18px;width:520px;height:520px;margin-left:-260px;margin-bottom:-260px;border-radius:50%;border:1px dashed rgba(244,196,48,.28);animation:spinring 14s linear infinite;pointer-events:none}
+.floor{position:absolute;left:50%;bottom:24px;width:300px;height:40px;margin-left:-150px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.55),transparent);pointer-events:none}
+.cf{position:absolute;left:50%;top:8px;width:min(64vw,268px);aspect-ratio:3/4;padding:0;border:0;background:transparent;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.2,.8,.2,1),opacity .5s}
+.photo{width:100%;height:100%;border-radius:24px;overflow:hidden;background:#EEE9DC;box-shadow:0 30px 50px -20px rgba(0,0,0,.8),inset 0 0 0 1px rgba(255,255,255,.4);position:relative}
+.cf .photo{-webkit-box-reflect:below 10px linear-gradient(transparent 72%,rgba(255,255,255,.16))}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.out img{filter:grayscale(.7)}
+.badge{position:absolute;background:var(--out-bg);color:var(--out-fg);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:6px 10px;border-radius:999px}
+.info{display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center}
+.kick{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--acc)}
+.info h2{margin:0;font-weight:700;font-size:clamp(26px,7vw,40px);line-height:1.05;text-wrap:balance}
+.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center}
+.price{font-weight:800;font-size:26px}
+.st{font-size:12px;font-weight:700;padding:6px 10px;border-radius:999px;background:var(--ok-bg);color:var(--ok-fg)}
+.st.no{background:var(--out-bg);color:var(--out-fg)}
+.circ{width:52px;height:52px;border-radius:50%;border:1px solid rgba(243,238,223,.22);background:var(--surf);color:var(--ink);display:flex;align-items:center;justify-content:center}
+.cta{min-height:52px;padding:0 26px;border-radius:999px;border:0;background:var(--acc);color:var(--onacc);font-weight:800;font-size:16px;display:flex;align-items:center;gap:10px;text-decoration:none}
+.sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:22px}
+.sec-h h2{margin:0;font-weight:700;font-size:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(168px,100%),1fr));gap:14px}
+@media (max-width:420px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.card{text-align:left;padding:8px 8px 14px;border-radius:22px;border:1px solid rgba(243,238,223,.12);background:var(--surf);color:var(--ink);display:flex;flex-direction:column;gap:10px;box-shadow:0 14px 30px -20px rgba(0,0,0,.8);transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s;animation:rise .75s cubic-bezier(.2,.8,.2,1) backwards}
+.card:hover{transform:perspective(700px) rotateX(7deg) rotateY(-7deg) translateY(-6px);box-shadow:0 28px 40px -18px rgba(0,0,0,.7)}
+.card:active{transform:perspective(700px) rotateX(5deg) scale(.97)}
+.card .photo{aspect-ratio:1/1;height:auto;border-radius:16px;box-shadow:none}
+.card .badge{left:8px;bottom:8px;font-size:10px;padding:5px 8px}
+.opt{position:absolute;right:8px;top:8px;background:var(--bg);color:var(--ink);font-size:10px;font-weight:700;padding:5px 8px;border-radius:999px}
+.cbody{display:flex;flex-direction:column;gap:4px;padding:0 6px}
+.cb{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+.cn{font-size:15px;font-weight:700;line-height:1.25}
+.cq{font-size:12px;color:var(--mut)}
+.cp{font-size:19px;font-weight:800;color:var(--acc);margin-top:4px}
+.card.out .cp{color:var(--mut)}
+.empty{padding:48px 20px;text-align:center;border:1px dashed rgba(243,238,223,.25);border-radius:22px;display:flex;flex-direction:column;gap:12px;align-items:center}
+.ghost{min-height:44px;padding:0 20px;border-radius:999px;border:1px solid var(--acc);background:transparent;color:var(--acc);font-weight:700}
+footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--mut);border-top:1px solid var(--line);padding-top:18px}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:400;width:58px;height:58px;border-radius:50%;background:#25D366;color:#0B2E17;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px -10px rgba(0,0,0,.6)}
+/* modal */
+.back{position:fixed;inset:0;z-index:500;background:rgba(5,13,10,.74);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);display:flex;align-items:flex-end;justify-content:center;animation:fade .3s ease}
+.back[hidden]{display:none}
+.sheet{width:100%;max-width:560px;max-height:94vh;max-height:94dvh;overflow-y:auto;overscroll-behavior:contain;background:var(--sheet);border:1px solid var(--line);border-bottom:0;border-radius:30px 30px 0 0;padding:14px 18px calc(26px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:18px;animation:sheet .45s cubic-bezier(.2,.8,.2,1)}
+.grab{width:44px;height:5px;border-radius:3px;background:rgba(243,238,223,.25)}
+.x{width:44px;height:44px;border-radius:50%;border:1px solid rgba(243,238,223,.2);background:var(--surf);color:var(--ink);display:flex;align-items:center;justify-content:center}
+.flipwrap{perspective:1200px;display:flex;justify-content:center;padding-top:4px}
+.flip{position:relative;width:min(66vw,250px);aspect-ratio:3/4;transform-style:preserve-3d;transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+.flip.on{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.face .photo{animation:floaty 6s ease-in-out infinite;box-shadow:0 34px 50px -22px rgba(0,0,0,.85)}
+.backface{transform:rotateY(180deg);border-radius:24px;background:var(--acc);color:var(--onacc);padding:20px;display:flex;flex-direction:column;gap:10px;box-shadow:0 34px 50px -22px rgba(0,0,0,.85);overflow:auto}
+.backface p{margin:0;font-size:14px;line-height:1.45;font-weight:600}
+.pill{min-height:44px;padding:0 18px;border-radius:999px;border:1px solid rgba(243,238,223,.25);background:transparent;color:var(--ink);font-weight:700;font-size:14px;display:flex;align-items:center;gap:8px}
+.mt{margin:0;font-weight:800;font-size:30px;line-height:1.05}
+.note{margin:4px 0 0;font-size:14px;font-weight:600;background:#1E3D31;border-radius:12px;padding:10px 12px}
+.vars{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));gap:8px}
+.var{min-height:64px;text-align:left;padding:10px 14px;border-radius:16px;border:2px solid var(--line);background:var(--surf);color:var(--ink);display:flex;flex-direction:column;gap:2px}
+.var[aria-pressed="true"]{border-color:var(--acc)}
+.var b{font-size:14px}.var span{font-size:13px;color:var(--acc)}.var.no span{color:var(--out-fg)}
+.tabs{display:flex;gap:6px;overflow-x:auto;background:#0E2019;padding:4px;border-radius:14px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:1 0 auto;min-height:44px;padding:0 12px;border-radius:10px;border:0;background:transparent;color:var(--mut);font-weight:700;font-size:13px}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--bg)}
+.panel{margin:0;font-size:15px;line-height:1.6;color:#E4E0D2;min-height:96px}
+.buy{display:flex;align-items:center;justify-content:space-between;gap:14px;border-top:1px solid var(--line);padding-top:16px}
+.buy .cta{min-height:54px;padding:0 22px;font-size:15px}
+.cta.alt{background:transparent;color:var(--ink);border:1px solid rgba(243,238,223,.3)}
+@keyframes floaty{0%,100%{transform:translateY(0) rotateY(-10deg)}50%{transform:translateY(-12px) rotateY(10deg)}}
+@keyframes rise{from{opacity:0;transform:perspective(700px) rotateX(42deg) translateY(46px)}to{opacity:1;transform:perspective(700px) rotateX(0) translateY(0)}}
+@keyframes sheet{from{opacity:0;transform:translateY(80px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes spinring{from{transform:rotateX(74deg) rotateZ(0)}to{transform:rotateX(74deg) rotateZ(360deg)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:14px">
+    <div class="top">
+      <div class="brand">
+        <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="none" stroke="#F4C430" stroke-width="2"/><path d="M9 20c3-7 9-9 16-8-3 1-5 3-6 6 3 0 5-1 6-2-2 5-7 7-12 6l-4 3z" fill="#F4C430"/></svg>
+        Catálogo Especializado
+      </div>
+      <span class="muted" style="font-size:12px;font-weight:600" id="total"></span>
+    </div>
+    <h1 class="disp">Nutrição &amp; Suplementação <span>Avícola</span></h1>
+    <p class="lead">Arraste o carrossel, toque em um produto e gire a embalagem em 3D. Pedidos direto com o Flávio pelo WhatsApp.</p>
+  </header>
+
+  <div style="display:flex;flex-direction:column;gap:12px">
+    <label for="busca" class="lbl">Buscar produto</label>
+    <div class="search">
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="#B5C0B0" stroke-width="2"/><path d="M20 20l-4-4" fill="none" stroke="#B5C0B0" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="busca" type="search" placeholder="Ex.: Tabernil, vitamina E, cálcio…" autocomplete="off">
+    </div>
+    <div class="chips" id="chips"></div>
+  </div>
+
+  <div id="main">
+    <section aria-label="Vitrine 3D" style="display:flex;flex-direction:column;gap:18px">
+      <div class="stage" id="stage"><div class="ring" aria-hidden="true"></div><div class="floor" aria-hidden="true"></div></div>
+      <div class="info">
+        <span class="kick" id="ck"></span>
+        <h2 class="disp" id="cn"></h2>
+        <div class="row"><span class="price disp" id="cp"></span><span class="muted" style="font-size:13px" id="cq"></span><span class="st" id="cs"></span></div>
+        <div class="row">
+          <button class="circ" id="prev" type="button" aria-label="Produto anterior"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button class="cta" id="openCur" type="button">Ver detalhes<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 4 0 1 0 18 0a9 4 0 1 0 -18 0M12 3v18" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+          <button class="circ" id="next" type="button" aria-label="Próximo produto"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </div>
+    </section>
+    <section aria-labelledby="gt" style="display:flex;flex-direction:column;gap:16px;margin-top:26px">
+      <div class="sec-h"><h2 class="disp" id="gt">Catálogo completo</h2><span class="muted" style="font-size:13px" id="gc"></span></div>
+      <div class="grid" id="grid"></div>
+    </section>
+  </div>
+  <div class="empty" id="empty" hidden>
+    <span class="disp" style="font-size:22px;font-weight:700">Nenhum produto encontrado</span>
+    <button class="ghost" type="button" id="reset">Limpar busca</button>
+  </div>
+
+  <footer>
+    <span>Catálogo de Produtos · Nutrição &amp; Suplementação Avícola</span>
+    <a href="https://wa.me/5561992531753" target="_blank" rel="noopener">Pedidos com Flávio · WhatsApp (61) 99253-1753</a>
+  </footer>
+</div>
+
+<a class="fab" href="https://wa.me/5561992531753?text=Ol%C3%A1%2C%20Fl%C3%A1vio!%20Vi%20o%20cat%C3%A1logo%20e%20tenho%20uma%20d%C3%BAvida." target="_blank" rel="noopener" aria-label="Falar com o Flávio no WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 9.5z" fill="currentColor"/></svg>
+</a>
+
+<div class="back" id="back" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" id="sheet"></div>
+</div>
+
+<script>
+(function(){
+var PHONE='5561992531753';
+var P=[
+{id:1,brand:'Versele-Laga',name:'Uni Komplet',cat:'alim',img:'img/p01.jpg',vars:[{l:'1 kg',p:300,ok:true}],desc:'Alimento completo e extrudado de manutenção cientificamente formulado para pequenas aves frugívoras e insetívoras. Evita a ingestão seletiva, garantindo nutrição total e equilibrada em todos os grãos.',uso:'Administrar à vontade na gaiola como alimento principal, podendo ser combinado com frutas frescas e/ou alimento vivo conforme a espécie.',ben:'Protege contra disfunções intestinais através da tecnologia Opti Digest, apoia o desenvolvimento de uma plumagem brilhante e fortalece a estrutura óssea.',comp:'Sementes selecionadas (alpiste e linhaça), extratos de proteínas vegetais, frutas (maçã, arandos e sabugueiro), minerais argilosos, pré-bióticos, cálcio e fósforo.'},
+{id:2,brand:'Versele-Laga',name:'Fruitti Patee',cat:'alim',img:'img/p02.jpg',vars:[{l:'1 kg',p:300,ok:true},{l:'500 g · Fracionado',p:120,ok:true}],desc:'Papa fortificante e energética pronta para uso, ideal para todas as espécies de aves ornamentais. Proporciona todos os nutrientes necessários durante os períodos críticos de criação, crescimento e muda. Disponível na embalagem original de 1 kg e na versão fracionada em embalagem compacta de 500g para criadores com plantéis menores.',uso:'Administrar uma porção fresca de 3 a 4 vezes por semana, deixada à disposição das aves em recipiente limpo e separado da alimentação diária habitual. Manter em local seco e arejado após a abertura.',ben:'Umidificada com mel 100% natural e pedaços de frutas. Enriquecida com lisina e metionina para um crescimento forte e plumagem exuberante, oferecendo aporte rápido de energia, estimulação da imunidade e excelente digestibilidade.',comp:'Produtos de padaria, mel natural (2%), extratos de proteínas vegetais, sementes, frutas selecionadas (maçã, pêssego, ameixa, alperce e pera), ômega-3, L-carnitina, lisina, metionina, vitaminas A, D3, E, C e minerais.'},
+{id:3,brand:'Virbac',name:'Océférol Fracionado',cat:'repro',img:'img/p03.jpg',vars:[{l:'10 ml',p:50,ok:true}],desc:'Océférol é um suplemento vitamínico mineral desenvolvido para aves ornamentais e passeriformes, especialmente rico em vitamina E, que é essencial para a reprodução adequada, como a colocação de ovos fertilizados e a eclosão.',uso:'Diluir 6 gotas de Océférol em 45 mL de água potável e administrar diariamente durante 15 dias antes do acasalamento, seguido de 2 dias por semana durante a estação de reprodução.',ben:'Ajuda a aumentar a fertilidade dos galadores, melhora a taxa de eclosão dos ovos e otimiza o desempenho de canto de aves em torneios.',comp:'Contém Vitamina E (Alfa-tocoferol), cálcio e fósforo, além de micronutrientes essenciais que contribuem para a vitalidade e resistência geral das aves.'},
+{id:4,brand:'Latac',name:'Seriferol Vitamina E Fracionado',cat:'repro',img:'img/p04.jpg',vars:[{l:'10 ml',p:20,ok:true}],desc:'Suplemento líquido de vitamina E pura da consagrada marca Latac. Desenvolvido para corrigir problemas de reprodução e baixa fertilidade em aves mantidas em cativeiro.',uso:'Diluir 10 gotas em 250 mL de água potável ou 6 gotas por 100g de farinhada. Iniciar 15 dias antes dos acasalamentos e manter 2 dias por semana na criação.',ben:'Previne a infertilidade nos machos, estimula o canto nos galadores, aumenta a porcentagem de ovos férteis e corrige a postura insuficiente nas fêmeas.',comp:'Alta concentração de Vitamina E (DL-alfa-tocoferol), propilenoglicol e veículo hidrossolúvel de rápida absorção intestinal.'},
+{id:5,brand:'Avizoon',name:'Fertizon AD3E Fracionado',cat:'repro',img:'img/p05.jpg',vars:[{l:'10 ml',p:25,ok:true}],desc:'Polivitamínico de alta assimilação sob forma de emulsão aquosa. Combina Vitaminas A, D3, E e C, essenciais para o crescimento, preparação do aparelho reprodutor e proteção imunológica.',uso:'Diluir na água de bebida limpa diariamente durante a preparação para o acasalamento ou como coadjuvante em fases de estresse e muda.',ben:'A Vitamina D3 garante a assimilação perfeita do cálcio para a casca do ovo, a Vitamina C atua como anti-infeccioso e o complexo AD3E assegura o máximo vigor reprodutivo.',comp:'Vitamina A (50.000.000 UI/L), Vitamina D3 (5.000.000 UI/L), Vitamina E (30.000 UI/L), Vitamina C (100.000 mg/L) e glicerol.'},
+{id:6,brand:'Latac',name:'Calcicolina P Fracionado',cat:'figado',img:'img/p06.jpg',vars:[{l:'10 ml',p:20,ok:true}],desc:'Protetor hepático e tônico mineral específico para evitar o acúmulo de gordura no fígado e desequilíbrios causados por dieta rica em sementes oleaginosas.',uso:'Diluir 20 gotas (1 mL) em 50 mL de água. Em manutenção: 2 dias por semana. Em distúrbios hepáticos/barriga vermelha: administrar por 8 dias consecutivos.',ben:'Previne e corrige a degeneração hepática (fígado gordo), fortalece o sistema esquelético, previne ovos de casca fina e aumenta a resistência muscular.',comp:'Cloreto de Colina, Glicerofosfato de Cálcio, Hipofosfito de Cálcio, Lecitina de Soja e minerais purificados.'},
+{id:7,brand:'Avizoon',name:'Vita E+SE Fracionado',cat:'repro',img:'img/p07.jpg',vars:[{l:'10 ml',p:20,ok:true}],desc:'Associação biológica concentrada de Vitamina E com Selênio. Atua como um potente antioxidante protetor celular e estimulante do sistema reprodutor e muscular.',uso:'Administrar diluído na água de beber durante o período de preparação dos reprodutores ou durante fases de intenso esforço físico de cantores.',ben:'Combate atrofias e fadiga muscular, previne processos degenerativos das células, aumenta os índices de fertilidade e reduz a mortalidade embrionária nos ovos.',comp:'Vitamina E (Alfa-tocoferol), Selênio orgânico de alta biodisponibilidade e agentes estabilizantes hidrossolúveis.'},
+{id:8,brand:'Versele-Laga',name:'Dextrotonic Fracionado',cat:'energia',img:'img/p08.jpg',vars:[{l:'10 ml',p:20,ok:true}],desc:'Suplemento energético concentrado com eletrólitos solúveis, oligoelementos e aminoácidos. Formulado para fornecer energia imediata e suporte muscular para aves em provas de canto ou alto rendimento.',uso:'Misturar 15 mL por litro de água (ou cerca de 15 gotas por 50 mL) durante os 2 dias que antecedem competições ou torneios de canto.',ben:'Aumenta significativamente a resistência física, evita cãibras musculares durante o esforço, elimina o cansaço e garante recuperação ultra-rápida pós-torneio.',comp:'Dextrose, Frutose, L-Arginina, Eletrólitos (Sódio, Magnésio), Zinco, Ferro, Manganês e Sacarose purificada.'},
+{id:9,brand:'Tabernil',name:'AD3E',cat:'repro',img:'img/p09.jpg',vars:[{l:'10 ml · Fracionado',p:70,ok:true},{l:'20 ml',p:200,ok:false}],desc:'Famoso complexo vitamínico espanhol especialmente formulado para estimular o estro e a reprodução em aves de gaiola, prevenindo estados de carência das Vitaminas A, D3 e E.',uso:'Adicionar 4 mL por litro de água (ou 4 gotas por 40 mL) durante 20 dias consecutivos antes do acasalamento ou em ciclos de 5 dias com descanso de 5 dias.',ben:'Estimula o instinto reprodutor dos casais, previne problemas de casca nos ovos, melhora a fertilidade dos machos e favorece a eclosão saudável dos filhotes.',comp:'Vitamina A (500.000 UI), Vitamina D3 (80.000 UI), Vitamina E (2,5 g), antioxidantes e veículo aquoso estabilizado.'},
+{id:10,brand:'Tabernil',name:'Total',cat:'vita',img:'img/p10.jpg',vars:[{l:'20 ml',p:200,ok:true}],desc:'Suplemento polivitamínico completo enriquecido com aminoácidos essenciais. Indicado para cobrir as necessidades nutricionais das aves em períodos de maior exigência física, enfraquecimento ou convalescença.',uso:'Adicionar 5 mL por litro de água de beber (equivalente a 8 gotas por 40 mL de água) durante 5 dias consecutivos. Renovar a água diariamente.',ben:'Acelera a recuperação de aves doentes ou debilitadas, previne estados de avitaminose, melhora o vigor geral, estimula o apetite e apoia o crescimento de filhotes.',comp:'Vitaminas A, D3, E, B1, B2, B6, B12, C, Nicotinamida, Pantotenato de Cálcio, Cloreto de Colina, Metionina e aminoácidos essenciais em veículo solúvel.'},
+{id:11,brand:'Versele-Laga',name:'Omni Vit Fracionado',cat:'vita',img:'img/p11.jpg',vars:[{l:'20 g',p:35,ok:true}],desc:'Mistura solúvel em pó com 14 vitaminas e aminoácidos essenciais. Indicado para manter uma imunidade ideal, suportar momentos de estresse, fraqueza ou recuperação de doenças.',uso:'Diluir 1 medida rasa (1g) em 250 mL de água potável ou misturar em 100g de farinhada. Servir 1 vez por semana em manutenção ou 5 dias seguidos em recuperação.',ben:'Melhora a condição física geral, aumenta a resistência contra infecções, acelera a recuperação após tratamentos com medicação e mantém a vitalidade.',comp:'Complexo B completo, Vitaminas A, D3, E, C, K3, Biotina, Ácido Fólico, Lisina, Metionina, Ferro, Zinco e Manganês.'},
+{id:12,brand:'Versele-Laga',name:'Ferti Vit Fracionado',cat:'repro',img:'img/p12.jpg',vars:[{l:'20 g',p:40,ok:true}],desc:'Suplemento em pó enriquecido com alta dose de Vitamina E, aminoácidos e oligoelementos. Projetado especificamente para promover o impulso sexual e a fertilidade nas aves.',uso:'Diluir 1g (1 colher dosadora) em 250 mL de água potável e 100g de farinhada. Administrar diariamente durante 3 a 4 semanas até à postura do primeiro ovo.',ben:'Estimula o galar nos machos e a postura nas fêmeas, aumenta a fertilidade dos ovos, reduz mortes no embrião e promove um canto forte nos galadores.',comp:'Vitamina E ultra-concentrada, Vitaminas A, D3, C, K3, B1, B2, B6, B12, Niacina, Lisina, Metionina, Zinco e Selênio.'},
+{id:13,brand:'Versele-Laga',name:'Calci Lux Fracionado',cat:'figado',img:'img/p13.jpg',vars:[{l:'20 g',p:20,ok:true}],desc:'Fonte de cálcio de altíssima qualidade e solubilidade em água. Fundamental para a formação ideal da casca dos ovos e para a perfeita estrutura óssea de filhotes em crescimento.',uso:'Em reprodução: 1 colher medida (4g) por 100g de farinhada ou 250mL de água diários. Prevenção de retenção de ovo: administrar diariamente no período de postura.',ben:'Evita ovos moles ou com casca de papel, previne a retenção do ovo na fêmea, garante ossos fortes nos filhotes e evita deficiência de cálcio no organismo.',comp:'Lactato de Cálcio puro e Gluconato de Cálcio, altamente assimiláveis pelo trato gastrointestinal das aves.'},
+{id:14,brand:'Nekton',name:'Nekton S',cat:'vita',img:'img/p14.jpg',vars:[{l:'35 g',p:100,ok:true}],desc:'Suplemento vitamínico mundialmente aclamado, contendo 13 vitaminas, 18 aminoácidos livres e minerais. Auxilia os processos metabólicos e melhora o aproveitamento total dos nutrientes diários.',uso:'Diluir 1g (1 colher dosadora inclusa) em 250 mL de água potável fria ou em 250g de papa de ovo. Usar regularmente ao longo do ano para manutenção da saúde.',ben:'Aumenta a imunidade e possui ação anti-stress. Melhora significativamente a taxa de fertilidade, a vitalidade dos reprodutores e o bem-estar geral das aves.',comp:'Dextrose, Carbonato de Cálcio, 18 aminoácidos (L-Alanina, L-Arginina, L-Lisina, etc.), Vitaminas A, D3, E, B-Complexo, C, Zinco e Cobre.'},
+{id:15,brand:'Versele-Laga',name:'Muscle Power',cat:'energia',img:'img/p15.jpg',vars:[{l:'1 cápsula',p:5,ok:true}],note:'Quantidade mínima de 8 cápsulas por pote.',desc:'Cápsula de alta concentração à base de aminoácidos de cadeia ramificada (BCAA: Valina, Leucina e Isoleucina). Desenvolvida para prevenir a degradação e otimizar a reconstrução muscular.',uso:'Administrar 1 cápsula diretamente no bico (umedecer com água antes de aplicar). Na véspera de competições ou logo após o retorno de voos e torneios para rápida recuperação.',ben:'Estimula o ganho muscular rápido, reduz significativamente a fadiga e a deterioração dos tecidos musculares após esforços intensos e acelera a regeneração.',comp:'L-Leucina (300mg), L-Valina (150mg), L-Isoleucina (150mg) e Vitamina B6 (2,8mg) por cápsula.'},
+{id:16,brand:'Versele-Laga',name:'Oro Bath',cat:'pluma',img:'img/p16.jpg',vars:[{l:'20 g',p:30,ok:false}],desc:'Sais de banho especiais para cuidados com a plumagem. Promove penas brilhantes, flexíveis e livres de parasitas externos, além de manter a pele saudável e hidratada.',uso:'Diluir 1 medida (1g) em 250 mL de água morna para a banheira da ave. Oferecer de 1 a 2 vezes por semana, especialmente durante os períodos de exposição e muda de penas.',ben:'Relaxa a musculatura da ave, limpa profundamente sem remover a oleosidade natural da pena e ajuda na remoção de caspas e resíduos de queratina das penas novas.',comp:'Sais minerais purificados, essência de pinho, agentes hidratantes da pele e condicionadores de plumagem de alta eficácia.'},
+{id:17,brand:'Versele-Laga',name:'Muta Vit',cat:'pluma',img:'img/p17.jpg',vars:[{l:'20 g',p:30,ok:false}],desc:'Mistura especial de vitaminas, aminoácidos e oligoelementos com alto teor de aminoácidos sulfurosos e biotina, desenvolvida para o período de muda das penas.',uso:'Diluir 1g (1 medida) por 250 mL de água potável ou 100g de farinhada. Oferecer 3 vezes por semana durante a época de muda e preparação de exposições.',ben:'Estimula a formação e o crescimento de uma plumagem forte, sedosa e perfeita, prevenindo mutações de penas defeituosas e reduzindo o estresse do processo.',comp:'Metionina, Cisteína, Biotina, Complexo B completo, Vitamina A, D3, E, C e minerais traço essenciais para o metabolismo do pelo e pena.'},
+{id:18,brand:'Versele-Laga',name:'Aminobolic Force',cat:'energia',img:'img/p18.jpg',vars:[{l:'10 ml',p:35,ok:false}],note:'Substituto do OMNIFORM, que foi descontinuado pela Oropharma.',desc:'Concentrado líquido de aminoácidos e adaptógenos. Substitui o consagrado Omniform que foi descontinuado pela Oropharma, fornecendo suporte metabólico imediato e recuperação muscular.',uso:'Adicionar 15 gotas em 50 mL de água de beber no dia anterior a competições ou durante 3 a 5 dias consecutivos em fases de esgotamento físico e estresse.',ben:'Rápida assimilação celular, melhora o rendimento do canto, previne a perda de massa magra em aves doentes e combate prostração e estresse de transporte.',comp:'Aminoácidos essenciais e não-essenciais purificados, L-Carnitina, complexo de recuperação B-Vitamínico e eletrólitos de bioabsorção rápida.'},
+{id:19,brand:'Versele-Laga',name:'Tropical Fruit Patee',cat:'alim',img:'img/p19.jpg',vars:[{l:'1 kg',p:300,ok:false}],desc:'Papa enriquecida com frutas tropicais selecionadas e mel natural. Alimento completo e altamente palatável para psitacídeos de pequeno e médio porte, frugívoros e aves ornamentais.',uso:'Servir à vontade como complemento alimentar ou misturado à ração habitual. Renovar diariamente para garantir o frescor e aroma dos pedaços de frutas.',ben:'Estimula o apetite de aves seletivas, fornece antioxidantes naturais provenientes de frutas tropicais e garante vitalidade com excelente digestibilidade.',comp:'Produtos de padaria, frutas tropicais desidratadas (mamão, abacaxi, banana, manga), mel natural (100%), extratos proteicos, óleos e minerais balanceados.'}
+];
+var CATS=[['all','Todos'],['alim','Alimentação'],['repro','Reprodução'],['vita','Vitaminas'],['energia','Energia & Músculo'],['figado','Fígado & Cálcio'],['pluma','Plumagem']];
+var S={cat:'all',q:'',active:0,open:null,v:0,tab:'desc',flip:false,list:[]};
+var $=function(id){return document.getElementById(id)};
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function fmt(n){return 'R$ '+n.toFixed(2).replace('.',',')}
+function ok(p){return p.vars.some(function(v){return v.ok})}
+function minP(p){return Math.min.apply(null,p.vars.map(function(v){return v.p}))}
+function priceTxt(p){return (p.vars.length>1?'a partir de ':'')+fmt(minP(p))}
+function qtyTxt(p){return p.vars.map(function(v){return v.l}).join(' / ')}
+function matchQ(p){var q=S.q.trim().toLowerCase();return !q||(p.brand+' '+p.name+' '+p.comp+' '+p.desc).toLowerCase().indexOf(q)>-1}
+function filter(){S.list=P.filter(function(p){return (S.cat==='all'||p.cat===S.cat)&&matchQ(p)})}
+
+$('total').textContent=P.reduce(function(n,p){return n+p.vars.length},0)+' itens';
+
+function renderChips(){
+  $('chips').innerHTML=CATS.map(function(c){
+    var n=P.filter(function(p){return (c[0]==='all'||p.cat===c[0])&&matchQ(p)}).length;
+    return '<button type="button" class="chip" data-cat="'+c[0]+'" aria-pressed="'+(S.cat===c[0])+'">'+esc(c[1])+'<small>'+n+'</small></button>';
+  }).join('');
+}
+function buildStage(){
+  var st=$('stage');
+  Array.prototype.slice.call(st.querySelectorAll('.cf')).forEach(function(e){e.remove()});
+  S.list.forEach(function(p,i){
+    var b=document.createElement('button');b.type='button';b.className='cf';b.dataset.i=i;
+    b.innerHTML='<div class="photo'+(ok(p)?'':' out')+'"><img src="'+p.img+'" alt="'+esc(p.brand+' '+p.name)+'" loading="'+(i<4?'eager':'lazy')+'" draggable="false">'+(ok(p)?'':'<span class="badge" style="top:12px;left:12px">Indisponível</span>')+'</div>';
+    st.appendChild(b);
+  });
+}
+function layout(){
+  var a=S.active;
+  Array.prototype.forEach.call($('stage').querySelectorAll('.cf'),function(b){
+    var i=+b.dataset.i,d=i-a,ad=Math.abs(d),vis=ad<=3,p=S.list[i];
+    b.style.transform='translateX(-50%) translateX('+(d*62)+'%) translateZ('+(-ad*170)+'px) rotateY('+(d===0?0:(d>0?-40:40))+'deg) scale('+(d===0?1:.9)+')';
+    b.style.opacity=vis?Math.max(0,1-ad*.24):0;b.style.zIndex=100-ad;b.style.pointerEvents=vis?'auto':'none';
+    b.tabIndex=d===0?0:-1;
+    b.setAttribute('aria-label',(d===0?'Ver detalhes de ':'Mostrar ')+p.brand+' '+p.name);
+  });
+  var c=S.list[a];if(!c)return;
+  $('ck').textContent=c.brand+' · '+String(a+1).padStart(2,'0')+' / '+String(S.list.length).padStart(2,'0');
+  $('cn').textContent=c.name;$('cp').textContent=priceTxt(c);$('cq').textContent=qtyTxt(c);
+  var s=$('cs');s.textContent=ok(c)?'Disponível':'Indisponível no momento';s.className='st'+(ok(c)?'':' no');
+}
+function renderGrid(){
+  var lab=(CATS.filter(function(c){return c[0]===S.cat})[0]||CATS[0])[1];
+  $('gt').textContent=S.cat==='all'?'Catálogo completo':lab;
+  $('gc').textContent=S.list.length+(S.list.length===1?' produto':' produtos');
+  $('grid').innerHTML=S.list.map(function(p,i){
+    return '<button type="button" class="card'+(ok(p)?'':' out')+'" data-id="'+p.id+'" style="animation-delay:'+(Math.min(i,12)*.05)+'s" aria-label="'+esc(p.brand+' '+p.name)+'">'+
+      '<div class="photo"><img src="'+p.img+'" alt="" loading="lazy">'+(ok(p)?'':'<span class="badge">Indisponível</span>')+(p.vars.length>1?'<span class="opt">2 opções</span>':'')+'</div>'+
+      '<div class="cbody"><span class="cb">'+esc(p.brand)+'</span><span class="cn">'+esc(p.name)+'</span><span class="cq">'+esc(qtyTxt(p))+'</span><span class="cp disp">'+priceTxt(p)+'</span></div></button>';
+  }).join('');
+}
+function refresh(){
+  filter();S.active=Math.min(S.active,Math.max(S.list.length-1,0));
+  renderChips();
+  var has=S.list.length>0;$('main').hidden=!has;$('empty').hidden=has;
+  if(has){buildStage();layout();renderGrid();}
+}
+function go(k){if(!S.list.length)return;S.active=(S.active+k+S.list.length)%S.list.length;layout()}
+
+function openP(id){S.open=id;S.v=0;S.tab='desc';S.flip=false;renderSheet();$('back').hidden=false;document.body.classList.add('lock');setTimeout(function(){var x=$('sheet').querySelector('.x');x&&x.focus()},50)}
+function closeP(){S.open=null;$('back').hidden=true;document.body.classList.remove('lock')}
+function renderSheet(){
+  var p=P.filter(function(x){return x.id===S.open})[0];if(!p)return;
+  var vi=Math.min(S.v,p.vars.length-1),sel=p.vars[vi];
+  var msg=(sel.ok?'Olá, Flávio! Quero pedir: ':'Olá, Flávio! Quando volta a ter: ')+p.brand+' '+p.name+' ('+sel.l+') — '+fmt(sel.p)+(p.id===15?' · mínimo 8 cápsulas':'');
+  var wa='https://wa.me/'+PHONE+'?text='+encodeURIComponent(msg);
+  var tabs=[['desc','Descrição'],['uso','Como usar'],['ben','Benefícios'],['comp','Composição']];
+  var sh=$('sheet');sh.setAttribute('aria-label',p.brand+' '+p.name);
+  sh.innerHTML=
+   '<div style="display:flex;align-items:center;justify-content:space-between"><span class="grab" aria-hidden="true"></span><button type="button" class="x" data-act="close" aria-label="Fechar"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button></div>'+
+   '<div class="flipwrap"><div class="flip'+(S.flip?' on':'')+'" id="flip"><div class="face"><div class="photo"><img src="'+p.img+'" alt="'+esc(p.brand+' '+p.name)+'"></div></div><div class="face backface"><span style="font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase">Composição</span><p>'+esc(p.comp)+'</p></div></div></div>'+
+   '<div style="display:flex;justify-content:center"><button type="button" class="pill" data-act="flip"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3M18 3v4h-4M6 21v-4h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span id="fl">'+(S.flip?'Ver embalagem':'Girar 3D · ver composição')+'</span></button></div>'+
+   '<div style="display:flex;flex-direction:column;gap:6px"><span class="kick">'+esc(p.brand)+'</span><h2 class="mt disp">'+esc(p.name)+'</h2>'+(p.note?'<p class="note">'+esc(p.note)+'</p>':'')+'</div>'+
+   '<div style="display:flex;flex-direction:column;gap:8px"><span class="lbl">Apresentação</span><div class="vars">'+p.vars.map(function(v,i){return '<button type="button" class="var'+(v.ok?'':' no')+'" data-v="'+i+'" aria-pressed="'+(i===vi)+'"><b>'+esc(v.l)+'</b><span>'+fmt(v.p)+(v.ok?'':' · indisponível')+'</span></button>'}).join('')+'</div></div>'+
+   '<div style="display:flex;flex-direction:column;gap:12px"><div class="tabs" role="tablist" aria-label="Informações do produto">'+tabs.map(function(t){return '<button type="button" role="tab" class="tab" data-tab="'+t[0]+'" aria-selected="'+(S.tab===t[0])+'">'+t[1]+'</button>'}).join('')+'</div><p class="panel" role="tabpanel">'+esc(p[S.tab])+'</p></div>'+
+   '<div class="buy"><div style="display:flex;flex-direction:column"><span class="muted" style="font-size:12px">'+esc(sel.l)+'</span><span class="disp" style="font-weight:800;font-size:28px">'+fmt(sel.p)+'</span></div><a class="cta'+(sel.ok?'':' alt')+'" href="'+wa+'" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>'+(sel.ok?'Pedir ao Flávio':'Avise-me quando chegar')+'</a></div>';
+}
+
+$('chips').addEventListener('click',function(e){var b=e.target.closest('.chip');if(!b)return;S.cat=b.dataset.cat;S.active=0;refresh()});
+$('busca').addEventListener('input',function(e){S.q=e.target.value;S.active=0;refresh()});
+$('reset').addEventListener('click',function(){S.q='';S.cat='all';$('busca').value='';refresh()});
+$('prev').addEventListener('click',function(){go(-1)});
+$('next').addEventListener('click',function(){go(1)});
+$('openCur').addEventListener('click',function(){var c=S.list[S.active];c&&openP(c.id)});
+$('stage').addEventListener('click',function(e){var b=e.target.closest('.cf');if(!b||moved)return;var i=+b.dataset.i;if(i===S.active)openP(S.list[i].id);else{S.active=i;layout()}});
+var sx=null,moved=false;
+$('stage').addEventListener('touchstart',function(e){sx=e.touches[0].clientX;moved=false},{passive:true});
+$('stage').addEventListener('touchmove',function(e){if(sx!=null&&Math.abs(e.touches[0].clientX-sx)>12)moved=true},{passive:true});
+$('stage').addEventListener('touchend',function(e){if(sx==null)return;var dx=e.changedTouches[0].clientX-sx;sx=null;if(Math.abs(dx)>40)go(dx<0?1:-1);setTimeout(function(){moved=false},60)});
+$('grid').addEventListener('click',function(e){var b=e.target.closest('.card');b&&openP(+b.dataset.id)});
+$('back').addEventListener('click',function(e){if(e.target===$('back'))closeP()});
+$('sheet').addEventListener('click',function(e){
+  var t=e.target.closest('button');if(!t)return;
+  if(t.dataset.act==='close')closeP();
+  else if(t.dataset.act==='flip'){S.flip=!S.flip;$('flip').classList.toggle('on',S.flip);$('fl').textContent=S.flip?'Ver embalagem':'Girar 3D · ver composição'}
+  else if(t.dataset.v!=null){S.v=+t.dataset.v;renderSheet()}
+  else if(t.dataset.tab){S.tab=t.dataset.tab;renderSheet()}
+});
+document.addEventListener('keydown',function(e){
+  if(S.open&&e.key==='Escape')closeP();
+  else if(!S.open&&document.activeElement&&document.activeElement.tagName!=='INPUT'){if(e.key==='ArrowLeft')go(-1);if(e.key==='ArrowRight')go(1)}
+});
+refresh();
+})();
+</script>
+</body>
+</html>
